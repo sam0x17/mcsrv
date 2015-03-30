@@ -1,3 +1,5 @@
+require 'mcsrv/version'
+require 'mcsrv/io'
 module MCSRV
   class Server
 

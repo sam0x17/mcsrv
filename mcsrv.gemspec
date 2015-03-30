@@ -6,8 +6,8 @@ Gem::Specification.new do |s|
   s.description  = 'Minecraft bindings for Minecraft Host Ninja'
   s.authors  = ['Sam Kelly']
   s.email  = 'sam@durosoft.com'
-  s.files  = ['lib/hola.rb']
-  s.homepage  = 'minecrafthost.ninja'
+  s.files  = ['lib/mcsrv.rb', 'lib/mcsrv/version.rb']
+  s.homepage  = 'http://minecrafthost.ninja'
   s.license  = 'proprietary'
 
   s.add_dependency 'net-ssh', '~> 2.9.2'
