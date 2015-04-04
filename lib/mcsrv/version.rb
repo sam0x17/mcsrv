@@ -44,20 +44,27 @@ module MCSRV
     end
 
     def self.latest_url
-      self.release_url if self.latest
+      self.release_url(self.latest) if self.latest
     end
 
     def self.version_path(version)
       "versions/minecraft_server.#{version}.jar"
     end
+    
+    def self.download_latest
+      version = latest
+      return false if !version
+      return download version
+    end
 
     def self.download(version)
       path = version_path version
-      return true if File.exist? path
+      return path if File.exist? path
       url = self.release_url version
       return false if !url
       MCSRV::IO.download_file url, path
       FileUtils.chmod '+x', path
+      path
     end
 
   end
