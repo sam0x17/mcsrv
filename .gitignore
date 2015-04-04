@@ -1,3 +1,5 @@
 *~
-minecraft_server*
+*.jar
 *.log
+versions/*
+!/versions/.keep
