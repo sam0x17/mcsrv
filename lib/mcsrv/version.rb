@@ -50,7 +50,7 @@ module MCSRV
     def self.version_path(version)
       "versions/minecraft_server.#{version}.jar"
     end
-    
+
     def self.download_latest
       version = latest
       return false if !version
