@@ -1,6 +1,6 @@
 require 'open-uri'
 module MCSRV
-  module IO
+  module Util
 
     def self.download_file(url, dest_path)
       begin

@@ -1,5 +1,5 @@
 require 'mcsrv/version'
-require 'mcsrv/io'
+require 'mcsrv/util'
 require 'mcsrv/server'
 module MCSRV
 end

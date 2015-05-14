@@ -1,6 +1,6 @@
 require 'open-uri'
 require 'json'
-require 'mcsrv/io'
+require 'mcsrv/util'
 
 module MCSRV
   module Version
@@ -62,7 +62,7 @@ module MCSRV
       return path if File.exist? path
       url = self.release_url version
       return false if !url
-      MCSRV::IO.download_file url, path
+      MCSRV::Util.download_file url, path
       FileUtils.chmod '+x', path
       path
     end
