@@ -1,5 +1,5 @@
 require 'mcsrv/version'
 require 'mcsrv/io'
-require 'mcsrv/minecraft_server'
+require 'mcsrv/server'
 module MCSRV
 end
